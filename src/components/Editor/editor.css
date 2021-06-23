@@ -7,8 +7,8 @@
   padding-top: 20px;
 }
 .editor__label {
-  margin-top: 10px;
-  padding: 30px;
+  display: block;
+  padding: 0 0 10px 30px;
   font-family: tahoma;
   font-weight: bold;
   text-transform: uppercase;
