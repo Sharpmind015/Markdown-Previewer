@@ -4,3 +4,4 @@ const markdownSet = markdown => {
     payload: markdown
   };
 };
+export default markdownSet;
