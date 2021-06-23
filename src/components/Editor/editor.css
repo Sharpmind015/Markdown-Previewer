@@ -12,6 +12,8 @@
   padding: 30px;
   font-family: tahoma;
   font-weight: bold;
+  text-transform: uppercase;
+  font-size: 16px;
 }
 .editor__input {
   background-color: #1d1e22;
