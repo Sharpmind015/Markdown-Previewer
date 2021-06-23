@@ -1,5 +1,5 @@
 const initialState = {
-  markdown: "15165"
+  markdown: ""
 };
 const markdownReducer = (state = initialState, action) => {
   switch (action.type) {

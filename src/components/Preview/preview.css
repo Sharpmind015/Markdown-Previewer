@@ -5,6 +5,7 @@
   position: relative;
   box-sizing: border-box;
   padding-top: 20px;
+  overflow-y: auto;
 }
 .preview div {
   width: 99.89%;
@@ -16,4 +17,7 @@
   text-transform: uppercase;
   font-size: 16px;
   margin: 0;
+}
+.results {
+  padding: 20px;
 }
