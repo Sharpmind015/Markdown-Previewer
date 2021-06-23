@@ -1,9 +1,10 @@
 import "./editor.css";
+import { connect } from "react-redux";
 import AceEditor from "react-ace";
 import "ace-builds/src-noconflict/theme-nord_dark";
 import "ace-builds/src-noconflict/mode-markdown";
 
-const Editor = () => {
+const Editor = markdown => {
   return (
     <div id="editor" className="editor">
       <label htmlFor="editor" className="editor__label">
@@ -26,4 +27,8 @@ const Editor = () => {
   );
 };
 
-export default Editor;
+const mapStateToProps = state => {
+  return { markdown: state.markdown.markdown };
+};
+
+export default connect(mapStateToProps, null)(Editor);

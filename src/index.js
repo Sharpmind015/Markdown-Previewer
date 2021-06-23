@@ -3,18 +3,16 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import markdownReducer from "./redux/reducer/markdownReducer";
-import { createStore } from "redux";
+import { createStore, combineReducers } from "redux";
 import { Provider } from "react-redux";
 import reportWebVitals from "./reportWebVitals";
 
-const store = createStore(markdownReducer);
+const store = createStore(combineReducers({ markdown: markdownReducer }));
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Provider store={store}>
-      <App />
-    </Provider>
-  </React.StrictMode>,
+  <Provider store={store}>
+    <App />
+  </Provider>,
   document.getElementById("root")
 );
 
