@@ -8,7 +8,7 @@ import { Provider } from "react-redux";
 import reportWebVitals from "./reportWebVitals";
 
 const store = createStore(markdownReducer);
-console.log(store.getState());
+
 ReactDOM.render(
   <Provider store={store}>
     <App />
