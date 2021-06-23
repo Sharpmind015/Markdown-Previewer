@@ -1,4 +1,3 @@
-import "./App.css";
 import SplitPane from "react-split-pane";
 import Editor from "./components/Editor/Editor";
 import Preview from "./components/Preview/Preview";
