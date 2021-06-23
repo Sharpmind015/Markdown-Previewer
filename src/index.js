@@ -2,7 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
+import markdownReducer from "./redux/reducer/markdownReducer";
+import { createStore } from "redux";
 import reportWebVitals from "./reportWebVitals";
+
+const store = createStore(markdownReducer);
 
 ReactDOM.render(
   <React.StrictMode>
