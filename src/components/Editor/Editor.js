@@ -6,7 +6,7 @@ const Editor = () => {
       <label htmlFor="editor" className="editor__label">
         Editor
       </label>
-      <textarea name="editor" id="editor" />
+      <textarea className="editor__input" name="editor" id="editor" />
     </div>
   );
 };
