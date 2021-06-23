@@ -1,7 +1,7 @@
 import { connect } from "react-redux";
 import markdownSet from "../../redux/action/markdownAction";
 import AceEditor from "react-ace";
-import "ace-builds/src-noconflict/theme-nord_dark";
+import "ace-builds/src-noconflict/theme-clouds_midnight";
 import "ace-builds/src-noconflict/mode-markdown";
 import "./editor.css";
 
@@ -14,7 +14,7 @@ const Editor = ({ markdownSet, markdown }) => {
       <textarea className="editor__input" name="editor" id="editor" />
       <AceEditor
         mode="markdown"
-        theme="nord_dark"
+        theme="clouds_midnight"
         name="MARKDOWN"
         fontSize={18}
         width={"100%"}
