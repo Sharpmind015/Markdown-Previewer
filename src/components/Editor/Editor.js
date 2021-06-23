@@ -1,6 +1,6 @@
 import "./editor.css";
 import AceEditor from "react-ace";
-import "ace-builds/src-noconflict/theme-monokai";
+import "ace-builds/src-noconflict/theme-nord_dark";
 import "ace-builds/src-noconflict/mode-markdown";
 
 const Editor = () => {
@@ -12,8 +12,14 @@ const Editor = () => {
       <textarea className="editor__input" name="editor" id="editor" />
       <AceEditor
         mode="markdown"
-        theme="monokai"
+        theme="nord_dark"
         name="MARKDOWN"
+        fontSize={18}
+        width={"100%"}
+        height={"100%"}
+        showPrintMargin={true}
+        showGutter={true}
+        tabSize={2}
         setOptions={{ useWorker: false }}
       />
     </div>
