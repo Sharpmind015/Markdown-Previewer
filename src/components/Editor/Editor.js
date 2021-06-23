@@ -5,6 +5,7 @@ import "ace-builds/src-noconflict/theme-nord_dark";
 import "ace-builds/src-noconflict/mode-markdown";
 
 const Editor = markdown => {
+  console.log(markdown);
   return (
     <div id="editor" className="editor">
       <label htmlFor="editor" className="editor__label">
@@ -28,7 +29,8 @@ const Editor = markdown => {
 };
 
 const mapStateToProps = state => {
-  return { markdown: state.markdown.markdown };
+  console.log(state.markdown);
+  return { markdown: state.markdown };
 };
 
 export default connect(mapStateToProps, null)(Editor);
