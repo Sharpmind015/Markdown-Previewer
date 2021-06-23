@@ -1,3 +1,5 @@
+import "./preview.css";
+
 const Preview = () => {
   return (
     <div id="preview" className="preview">
