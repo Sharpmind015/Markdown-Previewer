@@ -16,7 +16,7 @@ const Editor = () => {
         name="MARKDOWN"
         fontSize={18}
         width={"100%"}
-        height={"100%"}
+        height={`${100 - 11 / 100}%`}
         showPrintMargin={true}
         showGutter={true}
         tabSize={2}
