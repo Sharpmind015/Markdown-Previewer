@@ -1,3 +1,5 @@
+import "./editor.css";
+
 const Editor = () => {
   return (
     <div id="editor" className="editor">
